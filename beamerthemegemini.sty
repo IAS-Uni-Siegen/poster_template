@@ -8,33 +8,37 @@
 \RequirePackage{exscale}
 \RequirePackage{ragged2e}
 \RequirePackage{changepage}
-\RequirePackage{fontspec}
+% \RequirePackage{fontspec}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[default]{opensans}
+% \RequirePackage[sfdefault]{carlito}
 \RequirePackage{calc}
+% \RequirePackage{carlito}
 
 % ====================
 % Fonts
 % ====================
 
-\newfontfamily\Raleway[Ligatures=TeX]{Raleway}
-\newfontfamily\Lato[Ligatures=TeX]{Lato}
+% \newfontfamily\Carlito[Ligatures=TeX]{carlito}
+% \newfontfamily\Opensans[Ligatures=TeX]{opensans}
 
-\usefonttheme{professionalfonts}
+% \usefonttheme{professionalfonts}
 
-\setsansfont{Lato}[
-  UprightFont=*-Light,
-  ItalicFont=*-LightItalic,
-  BoldFont=*-Regular,
-  BoldItalicFont=*-Italic
-]
+% \setsansfont{opensans}[
+%   UprightFont=*-Light,
+%   ItalicFont=*-LightItalic,
+%   BoldFont=*-Regular,
+%   BoldItalicFont=*-Italic
+% ]
 
-\setbeamerfont{headline}{family=\Raleway}
+\setbeamerfont{headline}{family=\sffamily}
 \setbeamerfont{headline title}{size=\Huge,series=\bfseries}
 \setbeamerfont{headline author}{size=\Large}
 \setbeamerfont{headline institute}{size=\normalsize}
-\setbeamerfont{block title}{family=\Raleway,size=\large,series=\bfseries}
-\setbeamerfont{heading}{family=\Lato,series=\bfseries}
+\setbeamerfont{block title}{family=\sffamily,size=\large,series=\bfseries}
+\setbeamerfont{heading}{family=\sffamily,series=\bfseries}
 \setbeamerfont{caption}{size=\small}
-\setbeamerfont{footline}{family=\Raleway,size=\normalsize}
+\setbeamerfont{footline}{family=\sffamily,size=\normalsize}
 
 % ====================
 % Macros
@@ -107,7 +111,7 @@
 \newcommand{\logoleft}[1]{
   \newcommand{\insertlogoleft}{#1}
   \settowidth{\logoleftwidth}{\insertlogoleft}
-  \addtolength{\logoleftwidth}{10ex}
+  \addtolength{\logoleftwidth}{10cm}
   \setlength{\maxlogowidth}{\maxof{\logoleftwidth}{\logorightwidth}}
 }
 
@@ -120,7 +124,7 @@
         \vskip5ex
         \ifdefined\insertlogoleft
         \vspace*{\fill}
-        \hspace{10ex}
+        \hspace{20ex}
         \raggedright
         \insertlogoleft
         \vspace*{\fill}
