@@ -11,13 +11,14 @@
 \usepackage{lmodern}
 \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
 \usetheme{gemini}
-\usecolortheme{gemini}
+\usecolortheme{unisiegen}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
+\usepackage{qrcode}
 
 % ====================
 % Lengths
@@ -36,7 +37,7 @@
 % Title
 % ====================
 
-\title{Some fancy title: followed by some more text}
+\title{\mbox{Some fancy title: followed by some more text}}
 
 \author{Alyssa P. Hacker \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
 
@@ -57,8 +58,8 @@
 % ====================
 
 % use this to include logos on the left and/or right side of the header:
-% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
-% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+% \logoright{\includegraphics[height=4cm]{assets/UNIS-Dachmarke_kurz_rgb_unis_dachmarke.png}}
+\logoleft{\includegraphics[height=4cm]{assets/Logo_Kombi_IAS_Blau.png}}
 
 % ====================
 % Body
@@ -220,8 +221,8 @@
         \end{itemize}
       \item \textbf{Sed luctus, elit sit amet} dictum maximus, diam dolor
         faucibus purus, sed lobortis justo erat id turpis.
-      \item \textbf{Pellentesque facilisis dolor in leo} bibendum congue.
-        Maecenas congue finibus justo, vitae eleifend urna facilisis at.
+      % \item \textbf{Pellentesque facilisis dolor in leo} bibendum congue.
+      %   Maecenas congue finibus justo, vitae eleifend urna facilisis at.
     \end{itemize}
 
   \end{block}
@@ -304,6 +305,12 @@
 
   \end{block}
 
+  \begin{block}{Contact}
+
+    \centering
+    \qrcode[height=2cm]{https://www.eti.uni-siegen.de/ias/}
+
+  \end{block}
 \end{column}
 
 \separatorcolumn
