@@ -19,6 +19,8 @@
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
 \usepackage{qrcode}
+\usepackage{caption}
+\usepackage{wrapfig}
 
 % ====================
 % Lengths
@@ -48,9 +50,9 @@
 % ====================
 
 \footercontent{
-  \href{https://www.example.com}{https://www.example.com} \hfill
+  \href{https://www.eti.uni-siegen.de/ias/}{https://www.eti.uni-siegen.de/ias/} \hfill
   ABC Conference 2025, New York --- XYZ-1234 \hfill
-  \href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+  \href{mailto:john.doe@uni-siegen.de}{john.doe@uni-siegen.de}}
 % (can be left out to remove footer)
 
 % ====================
@@ -59,7 +61,7 @@
 
 % use this to include logos on the left and/or right side of the header:
 % \logoright{\includegraphics[height=4cm]{assets/UNIS-Dachmarke_kurz_rgb_unis_dachmarke.png}}
-\logoleft{\includegraphics[height=4cm]{assets/Logo_Kombi_IAS_Blau.png}}
+\logoleft{\includegraphics[height=4cm]{assets/Logo_Kombi_IAS_Blau.pdf}}
 
 % ====================
 % Body
@@ -290,11 +292,11 @@
     commodo quam, non luctus nibh ullamcorper in. Class aptent taciti sociosqu
     ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-    Nulla varius finibus volutpat. Mauris molestie lorem tincidunt, iaculis
-    libero at, gravida ante. Phasellus at felis eu neque suscipit suscipit.
-    Integer ullamcorper, dui nec pretium ornare, urna dolor consequat libero,
-    in feugiat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
-    auctor urna non, tempus sem.
+    % Nulla varius finibus volutpat. Mauris molestie lorem tincidunt, iaculis
+    % libero at, gravida ante. Phasellus at felis eu neque suscipit suscipit.
+    % Integer ullamcorper, dui nec pretium ornare, urna dolor consequat libero,
+    % in feugiat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
+    % auctor urna non, tempus sem.
 
   \end{block}
 
@@ -307,14 +309,23 @@
 
   \begin{block}{Contact}
 
-    \centering
-    \qrcode[height=2cm]{https://www.eti.uni-siegen.de/ias/}
+    \begin{figure}
+
+      \centering
+      \qrcode[height=6cm]{https://www.eti.uni-siegen.de/ias/contact/}
+      \captionsetup{labelformat=empty}
+      \caption{https://www.eti.uni-siegen.de/ias/contact/}
+
+    \end{figure}
 
   \end{block}
+
 \end{column}
 
 \separatorcolumn
+
 \end{columns}
+
 \end{frame}
 
 \end{document}
