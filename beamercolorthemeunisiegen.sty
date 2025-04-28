@@ -1,14 +1,16 @@
-% Gemini theme
+% Forked from Gemini theme
 % https://github.com/anishathalye/gemini
+
+% This file contains definitions for custom color theme of University of Siegen 
 
 % ====================
 % Definitions
 % ====================
 
 \definecolor{unigray}{RGB}{101, 114, 128}
-\definecolor{blue}{RGB}{64, 115, 158}
-\definecolor{darkblue}{RGB}{0, 56, 95}
-\definecolor{lightblue}{RGB}{219, 242, 248}
+\definecolor{unilightgray}{RGB}{225, 228, 230} % 20% of the standard unigray
+\definecolor{unidarkblue}{RGB}{0, 56, 95}
+\definecolor{unilightblue}{RGB}{219, 242, 248}
 
 % ====================
 % Theme
@@ -19,32 +21,32 @@
 \setbeamercolor{palette secondary}{fg=unigray,bg=white}
 \setbeamercolor{palette tertiary}{bg=unigray,fg=white}
 \setbeamercolor{palette quaternary}{fg=unigray,bg=white}
-\setbeamercolor{structure}{fg=darkblue}
+\setbeamercolor{structure}{fg=unidarkblue}
 
 % Headline
-\setbeamercolor{headline}{fg=darkblue,bg=lightblue}
-\setbeamercolor{headline rule}{bg=darkblue}
+\setbeamercolor{headline}{fg=unidarkblue,bg=unilightgray}
+\setbeamercolor{headline rule}{bg=unidarkblue}
 
 % Block
-\setbeamercolor{block title}{fg=darkblue,bg=white}
+\setbeamercolor{block title}{fg=unidarkblue,bg=white}
 \setbeamercolor{block separator}{bg=black}
 \setbeamercolor{block body}{fg=black,bg=white}
 
 % Alert Block
-\setbeamercolor{block alerted title}{fg=blue,bg=lightblue}
+\setbeamercolor{block alerted title}{fg=unidarkblue,bg=unilightblue}
 \setbeamercolor{block alerted separator}{bg=unigray}
-\setbeamercolor{block alerted body}{fg=black,bg=lightblue}
+\setbeamercolor{block alerted body}{fg=black,bg=unilightblue}
 
 % Example Block
-\setbeamercolor{block example title}{fg=white,bg=darkblue}
+\setbeamercolor{block example title}{fg=white,bg=unidarkblue}
 \setbeamercolor{block example separator}{bg=unigray}
-\setbeamercolor{block example body}{fg=white,bg=darkblue}
+\setbeamercolor{block example body}{fg=white,bg=unidarkblue}
 
 % Heading
 \setbeamercolor{heading}{fg=white}
 
 % Itemize
-\setbeamercolor{item}{fg=darkblue}
+\setbeamercolor{item}{fg=unidarkblue}
 
 % Bibliography
 \setbeamercolor{bibliography item}{fg=black}
