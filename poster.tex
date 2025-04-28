@@ -18,9 +18,10 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
-\usepackage{qrcode}
-\usepackage{caption}
-\usepackage{wrapfig}
+\usepackage{fancyqr}
+\usepackage{fontawesome5}
+\usepackage{subcaption}
+
 
 % ====================
 % Lengths
@@ -308,13 +309,23 @@
   \end{block}
 
   \begin{block}{Contact}
-
+   
     \begin{figure}
-
       \centering
-      \qrcode[height=6cm]{https://www.eti.uni-siegen.de/ias/contact/}
-      \captionsetup{labelformat=empty}
-      \caption{https://www.eti.uni-siegen.de/ias/contact/}
+
+      \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \fancyqr[image = {\includegraphics[width=1.1cm]{assets/UNIS-Dachmarke_kurz_PAT.pdf}}, image padding=1, height=6cm, color=unidarkblue, level=H]{https://www.eti.uni-siegen.de/ias/}
+        % \captionsetup{labelformat=empty}
+        % \caption{https://www.eti.uni-siegen.de/ias/}
+      \end{subfigure}
+      \hspace{1cm}
+      \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \fancyqr[image = {\color{unidarkblue} \large \faGithub}, image padding=1, height=6cm, color=unidarkblue, level=H]{https://www.github.com/orgs/IAS-Uni-Siegen}
+        % \captionsetup{labelformat=empty}
+        % \caption{https://www.github.com/orgs/IAS-Uni-Siegen}
+      \end{subfigure}
 
     \end{figure}
 
