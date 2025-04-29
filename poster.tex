@@ -11,13 +11,17 @@
 \usepackage{lmodern}
 \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
 \usetheme{gemini}
-\usecolortheme{gemini}
+\usecolortheme{unisiegen}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
 \usepackage{anyfontsize}
+\usepackage{fancyqr}
+\usepackage{fontawesome5}
+\usepackage{subcaption}
+
 
 % ====================
 % Lengths
@@ -36,7 +40,7 @@
 % Title
 % ====================
 
-\title{Some fancy title: followed by some more text}
+\title{\mbox{Some fancy title: followed by some more text}}
 
 \author{Alyssa P. Hacker \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
 
@@ -47,9 +51,9 @@
 % ====================
 
 \footercontent{
-  \href{https://www.example.com}{https://www.example.com} \hfill
+  \href{https://www.eti.uni-siegen.de/ias/}{https://www.eti.uni-siegen.de/ias/} \hfill
   ABC Conference 2025, New York --- XYZ-1234 \hfill
-  \href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+  \href{mailto:john.doe@uni-siegen.de}{john.doe@uni-siegen.de}}
 % (can be left out to remove footer)
 
 % ====================
@@ -57,8 +61,8 @@
 % ====================
 
 % use this to include logos on the left and/or right side of the header:
-% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
-% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+% \logoright{\includegraphics[height=4cm]{assets/UNIS-Dachmarke_kurz_PAT.pdf}}
+\logoleft{\includegraphics[height=4cm]{assets/Logo_Kombi_IAS_Blau.pdf}}
 
 % ====================
 % Body
@@ -220,8 +224,8 @@
         \end{itemize}
       \item \textbf{Sed luctus, elit sit amet} dictum maximus, diam dolor
         faucibus purus, sed lobortis justo erat id turpis.
-      \item \textbf{Pellentesque facilisis dolor in leo} bibendum congue.
-        Maecenas congue finibus justo, vitae eleifend urna facilisis at.
+      % \item \textbf{Pellentesque facilisis dolor in leo} bibendum congue.
+      %   Maecenas congue finibus justo, vitae eleifend urna facilisis at.
     \end{itemize}
 
   \end{block}
@@ -289,11 +293,11 @@
     commodo quam, non luctus nibh ullamcorper in. Class aptent taciti sociosqu
     ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-    Nulla varius finibus volutpat. Mauris molestie lorem tincidunt, iaculis
-    libero at, gravida ante. Phasellus at felis eu neque suscipit suscipit.
-    Integer ullamcorper, dui nec pretium ornare, urna dolor consequat libero,
-    in feugiat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
-    auctor urna non, tempus sem.
+    % Nulla varius finibus volutpat. Mauris molestie lorem tincidunt, iaculis
+    % libero at, gravida ante. Phasellus at felis eu neque suscipit suscipit.
+    % Integer ullamcorper, dui nec pretium ornare, urna dolor consequat libero,
+    % in feugiat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
+    % auctor urna non, tempus sem.
 
   \end{block}
 
@@ -304,10 +308,35 @@
 
   \end{block}
 
+  \begin{block}{Contact}
+   
+    \begin{figure}
+      \centering
+
+      \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \fancyqr[image = {\includegraphics[width=1.1cm]{assets/UNIS-Dachmarke_kurz_PAT.pdf}}, image padding=1, height=6cm, color=unidarkblue, level=H]{https://www.eti.uni-siegen.de/ias/}
+        % \captionsetup{labelformat=empty}
+        % \caption{https://www.eti.uni-siegen.de/ias/}
+      \end{subfigure}
+      \hspace{1cm}
+      \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \fancyqr[image = {\color{unidarkblue} \large \faGithub}, image padding=1, height=6cm, color=unidarkblue, level=H]{https://www.github.com/orgs/IAS-Uni-Siegen}
+        % \captionsetup{labelformat=empty}
+        % \caption{https://www.github.com/orgs/IAS-Uni-Siegen}
+      \end{subfigure}
+
+    \end{figure}
+
+  \end{block}
+
 \end{column}
 
 \separatorcolumn
+
 \end{columns}
+
 \end{frame}
 
 \end{document}
