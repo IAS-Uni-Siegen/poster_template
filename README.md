@@ -6,12 +6,6 @@ This repository serves as University of Siegen poster template based on [anishat
 
 [![UniSiegen generic poster](assets/generic-poster.jpg)](assets/generic-poster.pdf)
 
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini-small.png">
-</a>
-</p>
-
 ## Dependencies
 
 * A TeX installation that includes [pdfTeX]
@@ -37,23 +31,16 @@ to add an institution logo to the poster.
 
 ## Themes
 
-Gemini currently includes the following color themes according to [UniSiegen design guidelines](https://design.uni-siegen.de/):
+Gemini currently includes the following color themes according to [design guidelines](https://design.uni-siegen.de/):
 
 * `gemini` (default)
 * `university of siegen`
 
 It's also easy to make your own!
 
-### UniSiegen Theme
+### Example
 
 [![UniSiegen example poster](assets/example-poster.jpg)](assets/example-poster.pdf)
-
-
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-labsix.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-labsix-small.png">
-</a>
-</p>
 
 ## Design goals
 
@@ -70,11 +57,12 @@ investing a lot of time in implementing a new feature.
 
 ## License
 
-Copyright (c) University of Siegen. Released under the MIT License. See
+Copyright (c) [Chair of IAS, University of Siegen]. Released under the MIT License. See
 [LICENSE.md][license] for details.
 
 [beamerposter]: https://github.com/deselaers/latex-beamerposter
 [pdfTeX]: https://tug.org/applications/pdftex/
 [CTAN]: https://ctan.org/
 [license]: LICENSE.md
+[Chair of IAS, University of Siegen]: https://www.eti.uni-siegen.de/ias/
 [FAQ]: https://github.com/anishathalye/gemini/wiki/FAQ
