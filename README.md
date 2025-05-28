@@ -4,6 +4,7 @@ Gemini is a modern LaTeX [beamerposter] theme.
 
 This repository serves as University of Siegen poster template based on [anishathalye/Gemini](https://github.com/anishathalye/gemini).
 
+## Poster Template
 [![UniSiegen generic poster](assets/generic-poster.jpg)](assets/generic-poster.pdf)
 
 ## Dependencies
