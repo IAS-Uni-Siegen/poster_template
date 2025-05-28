@@ -4,7 +4,7 @@ Gemini is a modern LaTeX [beamerposter] theme.
 
 This repository serves as University of Siegen poster template based on [anishathalye/Gemini](https://github.com/anishathalye/gemini).
 
-![UniSiegen generic poster](assets/generic-poster.jpg)
+[![UniSiegen generic poster](assets/generic-poster.jpg)](assets/generic-poster.pdf)
 
 <p align="center">
 <a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini.pdf">
@@ -37,7 +37,7 @@ to add an institution logo to the poster.
 
 ## Themes
 
-Gemini currently includes the following color themes:
+Gemini currently includes the following color themes according to [UniSiegen design guidelines](https://design.uni-siegen.de/):
 
 * `gemini` (default)
 * `university of siegen`
@@ -46,7 +46,7 @@ It's also easy to make your own!
 
 ### UniSiegen Theme
 
-![UniSiegen example poster](assets/example-poster.jpg)
+[![UniSiegen example poster](assets/example-poster.jpg)](assets/example-poster.pdf)
 
 
 <p align="center">
