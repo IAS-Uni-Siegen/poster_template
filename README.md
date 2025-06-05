@@ -55,6 +55,7 @@ This repository serves as University of Siegen poster template based on [anishat
 Gemini currently includes the following color themes according to [design guidelines](https://design.uni-siegen.de/):
 
 * `gemini`
+
 * `university of siegen` (default)
 
 It's also easy to make your own!
