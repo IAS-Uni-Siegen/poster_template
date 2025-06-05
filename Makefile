@@ -1,6 +1,6 @@
 REQUIRED_PACKAGES = texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra lmodern texlive-luatex texlive-xetex latexmk
 
-.PHONY: main clean check_dependencies first-poster.pdf
+.PHONY: main clean check_dependencies generic-poster.pdf first-poster.pdf
 
 main: generic-poster.pdf
 
