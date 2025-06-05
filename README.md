@@ -32,7 +32,7 @@ This repository serves as University of Siegen poster template based on [anishat
 
 ## Makefile Info
 
-* Makefile by default has target `main` which builds `generic-poster.tex` but additional targets are also available.
+* Makefile by default executes target `main` which builds `generic-poster.tex` but additional targets are also available.
 
 * `clean` : Deletes all the output files including `.pdf` and `.log` files
 
