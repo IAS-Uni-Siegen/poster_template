@@ -1,16 +1,16 @@
-# UniSiegen Gemini 
+# UniSiegen-Gemini 
 
 Gemini is a modern LaTeX [beamerposter] theme.
 
 This repository serves as University of Siegen poster template based on [anishathalye/Gemini](https://github.com/anishathalye/gemini).
 
 ## Poster Template
-[![UniSiegen generic poster](assets/generic-poster.jpg)](assets/generic-poster.pdf)
+[![UniSiegen generic poster](examples/generic-poster.jpg)](examples/generic-poster.pdf)
 
 ## Dependencies
 
 * A TeX installation that includes [pdfTeX]
-    * You also need `latexmk` if you want to use the provided `Makefile`
+  * You also need `latexmk` if you want to use the provided `Makefile`
 * LaTeX package dependencies including beamerposter (these usually come with
   your TeX installation, but if not, you can get them from [CTAN])
 
@@ -18,17 +18,37 @@ This repository serves as University of Siegen poster template based on [anishat
 
 1. Copy the files in this repository (or clone the repository)
 
-1. In `poster.tex`, set up your paper size, column layout, and scale the
+1. In `generic-poster.tex`, set up your paper size, column layout, and scale the
    content as necessary
 
-1. Edit the content in `poster.tex` as necessary.
+1. Edit the content in `generic-poster.tex` as necessary.
 
-1. Run `make` to build your poster
+1. If you use Windows, use VSCode to build your project and make sure that automatic dependency installation for MiKTeX is turned on.
 
-## FAQ
+1. If you use Unix, use `make` to build your project.
 
-See the [FAQ] in the Wiki for answers to frequently asked questions such as how
-to add an institution logo to the poster.
+1. You can also use following command to manually build your project -
+  `latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf {your_poster.tex}`
+
+## Makefile Info
+
+* Makefile by default has target `main` which builds `generic-poster.tex` but additional targets are also available.
+
+* `clean` : Deletes all the output files including `.pdf` and `.log` files
+
+* `check_dependencies` : If you are on linux machine, checks for dependencies
+
+* `generic-poster.pdf` : Builds `generic-poster.tex`
+
+* `first-poster.pdf` : Builds `first-poster.tex`
+
+## Folder Organization
+
+* `assets` : Contains all the design asset files used for the poster
+
+* `fig` : Contains all the figure files used for the poster
+
+* `examples` : Contains example posters
 
 ## Themes
 
@@ -41,7 +61,8 @@ It's also easy to make your own!
 
 ### Example
 
-[![UniSiegen example poster](assets/example-poster.jpg)](assets/example-poster.pdf)
+1. `first-poster.tex`
+[![UniSiegen example poster](examples/first-poster.jpg)](examples/first-poster.pdf)
 
 ## Design goals
 
