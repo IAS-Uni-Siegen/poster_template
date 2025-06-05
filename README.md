@@ -23,9 +23,9 @@ This repository serves as University of Siegen poster template based on [anishat
 
 1. Edit the content in `generic-poster.tex` as necessary.
 
-1. If you use Windows, use VSCode to build your project and make sure that automatic dependency installation for MiKTeX is turned on.
+1. If you use Windows, you can use [VSCode](https://code.visualstudio.com/) with [LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop) extension to build your project. Please make sure that automatic dependency installation for [MiKTeX](https://miktex.org/) is turned on.
 
-1. If you use Unix, use `make` to build your project.
+1. If you use Linux, use `make` to build your project.
 
 1. You can also use following command to manually build your project :
   `latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf your_poster.tex`
