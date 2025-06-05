@@ -27,8 +27,8 @@ This repository serves as University of Siegen poster template based on [anishat
 
 1. If you use Unix, use `make` to build your project.
 
-1. You can also use following command to manually build your project -
-  `latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf {your_poster.tex}`
+1. You can also use following command to manually build your project :
+  `latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf your_poster.tex`
 
 ## Makefile Info
 
