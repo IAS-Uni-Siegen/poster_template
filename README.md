@@ -79,13 +79,13 @@ components are greatly appreciated! Given the subjective nature of design,
 you're encouraged to open an issue or pull request early to get feedback before
 investing a lot of time in implementing a new feature.
 
-<!-->
+<!--
 ## License
 
 Copyright (c) [Chair of IAS, University of Siegen]. Released under the MIT License. See
 [LICENSE.md][license] for details.
 
-<-->
+-->
 
 [beamerposter]: https://github.com/deselaers/latex-beamerposter
 [pdfTeX]: https://tug.org/applications/pdftex/
