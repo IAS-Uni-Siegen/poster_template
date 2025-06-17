@@ -1,5 +1,8 @@
 # output
-*.pdf
+/*.pdf
+
+# omitted
+*.png
 
 # intermediate files
 *.aux

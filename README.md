@@ -1,67 +1,70 @@
-# Gemini [![Build Status](https://github.com/anishathalye/gemini/actions/workflows/ci.yml/badge.svg)](https://github.com/anishathalye/gemini/actions/workflows/ci.yml)
+# UniSiegen-Gemini 
 
 Gemini is a modern LaTeX [beamerposter] theme.
 
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-gemini-small.png">
-</a>
-</p>
+This repository serves as University of Siegen poster template based on [anishathalye/Gemini](https://github.com/anishathalye/gemini).
 
-If you're looking for a beamer presentation theme, take a look at [Auriga].
+## Poster Template
+[![UniSiegen generic poster](examples/generic-poster.jpg)](examples/generic-poster.pdf)
 
 ## Dependencies
 
-* A TeX installation that includes [LuaTeX]
-    * You also need `latexmk` if you want to use the provided `Makefile`
+* A TeX installation that includes [pdfTeX]
+  * You also need `latexmk` if you want to use the provided `Makefile`
 * LaTeX package dependencies including beamerposter (these usually come with
   your TeX installation, but if not, you can get them from [CTAN])
-* [Raleway] and [Lato], which are both available under Open Font License
 
 ## Usage
 
 1. Copy the files in this repository (or clone the repository)
 
-1. In `poster.tex`, set up your paper size, column layout, and scale the
+1. In `generic-poster.tex`, set up your paper size, column layout, and scale the
    content as necessary
 
-1. Make a copy of `beamercolorthemegemini.sty`, update the `\usecolortheme`
-   line in `poster.tex`, and theme the poster to your liking (optional, but
-   highly recommended)
+1. Edit the content in `generic-poster.tex` as necessary.
 
-1. Run `make` to build your poster
+1. If you use Windows, you can use [VSCode](https://code.visualstudio.com/) with [LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop) extension to build your project. Please make sure that automatic dependency installation for [MiKTeX](https://miktex.org/) is turned on.
 
-## FAQ
+1. If you use Linux, use `make` to build your project.
 
-See the [FAQ] in the Wiki for answers to frequently asked questions such as how
-to add an institution logo to the poster.
+1. You can also use following command to manually build your project :
+  `latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf your_poster.tex`
+
+## Makefile Info
+
+* Makefile by default executes target `main` which builds `generic-poster.tex` but additional targets are also available.
+
+* `clean` : Deletes all the output files including `.pdf` and `.log` files
+
+* `check_dependencies` : If you are on linux machine, checks for dependencies
+
+* `generic-poster.pdf` : Builds `generic-poster.tex`
+
+* `first-poster.pdf` : Builds `first-poster.tex`
+
+## Folder Organization
+
+* `assets` : Contains all the design asset files used for the poster
+
+* `fig` : Contains all the figure files used for the poster
+
+* `examples` : Contains example posters
 
 ## Themes
 
-Gemini currently includes the following color themes:
+Gemini currently includes the following color themes according to [design guidelines](https://design.uni-siegen.de/):
 
-* `gemini` (default)
-* `mit`
-* `umich`
-* `labsix`
+* `gemini`
+
+* `university of siegen` (default)
 
 It's also easy to make your own!
 
-### MIT theme
+### Example
 
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-mit.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-mit-small.png">
-</a>
-</p>
+1. `first-poster.tex`
 
-### LabSix theme
-
-<p align="center">
-<a href="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-labsix.pdf">
-<img src="https://raw.githubusercontent.com/anishathalye/assets/master/gemini/poster-labsix-small.png">
-</a>
-</p>
+[![UniSiegen example poster](examples/first-poster.jpg)](examples/first-poster.pdf)
 
 ## Design goals
 
@@ -76,16 +79,16 @@ components are greatly appreciated! Given the subjective nature of design,
 you're encouraged to open an issue or pull request early to get feedback before
 investing a lot of time in implementing a new feature.
 
+<!-->
 ## License
 
-Copyright (c) Anish Athalye. Released under the MIT License. See
+Copyright (c) [Chair of IAS, University of Siegen]. Released under the MIT License. See
 [LICENSE.md][license] for details.
 
+<-->
+
 [beamerposter]: https://github.com/deselaers/latex-beamerposter
-[Auriga]: https://github.com/anishathalye/auriga
-[LuaTeX]: http://www.luatex.org/
+[pdfTeX]: https://tug.org/applications/pdftex/
 [CTAN]: https://ctan.org/
-[Raleway]: https://www.fontsquirrel.com/fonts/raleway
-[Lato]: https://www.fontsquirrel.com/fonts/lato
 [license]: LICENSE.md
-[FAQ]: https://github.com/anishathalye/gemini/wiki/FAQ
+[Chair of IAS, University of Siegen]: https://www.eti.uni-siegen.de/ias/
