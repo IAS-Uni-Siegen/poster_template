@@ -74,10 +74,14 @@ It's also easy to make your own!
 
 ## Contributing
 
-Contributions to Gemini such as bug reports, new themes, and new poster
-components are greatly appreciated! Given the subjective nature of design,
-you're encouraged to open an issue or pull request early to get feedback before
-investing a lot of time in implementing a new feature.
+- We recommend using [VSCode](https://code.visualstudio.com/) as code editor.
+- [Ruff](https://github.com/astral-sh/ruff) should be installed.
+
+    ```bash
+    pip install ruff
+    ```
+- It is expected that [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) and [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff) extensions are installed so that formatting of the code is achieved automatically.
+- Please open an issue or pull request to suggest changes. Critical feedback and improvement hints are always welcome and highly appreciated!
 
 <!--
 ## License
