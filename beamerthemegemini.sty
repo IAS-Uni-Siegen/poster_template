@@ -159,79 +159,79 @@
 % Block
 \setbeamertemplate{block begin}
 {
-\begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block title}
-	\vskip0pt
-	\usebeamerfont{block title}\insertblocktitle
-	\vskip-1.25ex
-	\begin{beamercolorbox}[colsep=0.025ex]{block separator}\end{beamercolorbox}
-\end{beamercolorbox}
-{\parskip0pt\par}
-\usebeamerfont{block body}
-\vskip-0.5ex
-\begin{beamercolorbox}[colsep*=0ex]{block body}
+	\begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block title}
+		\vskip0pt
+		\usebeamerfont{block title}\insertblocktitle
+		\vskip-1.25ex
+		\begin{beamercolorbox}[colsep=0.025ex]{block separator}\end{beamercolorbox}
+	\end{beamercolorbox}
+	{\parskip0pt\par}
+	\usebeamerfont{block body}
+	\vskip-0.5ex
+	\begin{beamercolorbox}[colsep*=0ex]{block body}
 	\justifying
 	\setlength{\parskip}{1ex}
 	\vskip-2ex
-	}
-	\setbeamertemplate{block end}
-	{
-\end{beamercolorbox}
-\vskip0pt
-\vspace*{2ex}
+}
+\setbeamertemplate{block end}
+{
+	\end{beamercolorbox}
+	\vskip0pt
+	\vspace*{2ex}
 }
 
 % Alert Block
 \setbeamertemplate{block alerted begin}
 {
-\begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block alerted title}
-	\vskip0pt
-	\usebeamerfont{block title}\insertblocktitle
-	\vskip-1.25ex
-	\begin{beamercolorbox}[colsep=0.025ex]{block alerted separator}\end{beamercolorbox}
-\end{beamercolorbox}
-{\parskip0pt\par}
-\usebeamerfont{block body}
-\vskip-0.5ex
-\begin{beamercolorbox}[colsep*=0ex]{block alerted body}
+	\begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block alerted title}
+		\vskip0pt
+		\usebeamerfont{block title}\insertblocktitle
+		\vskip-1.25ex
+		\begin{beamercolorbox}[colsep=0.025ex]{block alerted separator}\end{beamercolorbox}
+	\end{beamercolorbox}
+	{\parskip0pt\par}
+	\usebeamerfont{block body}
+	\vskip-0.5ex
+	\begin{beamercolorbox}[colsep*=0ex]{block alerted body}
 	\justifying
 	\begin{adjustwidth}{1ex}{1ex}
-		\setlength{\parskip}{1ex}
-		\vskip-2ex
-		}
-		\setbeamertemplate{block alerted end}
-		{
+	\setlength{\parskip}{1ex}
+	\vskip-2ex
+}
+\setbeamertemplate{block alerted end}
+{
 	\end{adjustwidth}
 	\vskip1ex
-\end{beamercolorbox}
-\vskip0pt
-\vspace*{2ex}
+	\end{beamercolorbox}
+	\vskip0pt
+	\vspace*{2ex}
 }
 
 % Example Block
 \setbeamertemplate{block example begin}
 {
-\begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block example title}
-	\vskip0pt
-	\usebeamerfont{block title}\insertblocktitle
-	\vskip-1.25ex
-	\begin{beamercolorbox}[colsep=0.025ex]{block example separator}\end{beamercolorbox}
-\end{beamercolorbox}
-{\parskip0pt\par}
-\usebeamerfont{block body}
-\vskip-0.5ex
-\begin{beamercolorbox}[colsep*=0ex]{block example body}
+	\begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block example title}
+		\vskip0pt
+		\usebeamerfont{block title}\insertblocktitle
+		\vskip-1.25ex
+		\begin{beamercolorbox}[colsep=0.025ex]{block example separator}\end{beamercolorbox}
+	\end{beamercolorbox}
+	{\parskip0pt\par}
+	\usebeamerfont{block body}
+	\vskip-0.5ex
+	\begin{beamercolorbox}[colsep*=0ex]{block example body}
 	\justifying
 	\begin{adjustwidth}{1ex}{1ex}
-		\setlength{\parskip}{1ex}
-		\vskip-2ex
-		}
-		\setbeamertemplate{block example end}
-		{
+	\setlength{\parskip}{1ex}
+	\vskip-2ex
+}
+\setbeamertemplate{block example end}
+{
 	\end{adjustwidth}
 	\vskip1ex
-\end{beamercolorbox}
-\vskip0pt
-\vspace*{2ex}
+	\end{beamercolorbox}
+	\vskip0pt
+	\vspace*{2ex}
 }
 
 % Footer
@@ -239,17 +239,17 @@
 
 \setbeamertemplate{footline}{
 	\ifdefined\insertfootercontent
-		\begin{beamercolorbox}[vmode]{headline}
-			\ifbeamercolorempty[bg]{headline rule}{}{
-				\begin{beamercolorbox}[wd=\paperwidth,colsep=0.25ex]{headline rule}\end{beamercolorbox}
-			}
-			\vspace{1.5ex}
-			\hspace{\sepwidth}
-			\usebeamerfont{footline}
-			\centering
-			\insertfootercontent
-			\hspace{\sepwidth}
-			\vspace{1.5ex}
-		\end{beamercolorbox}
+	\begin{beamercolorbox}[vmode]{headline}
+		\ifbeamercolorempty[bg]{headline rule}{}{
+			\begin{beamercolorbox}[wd=\paperwidth,colsep=0.25ex]{headline rule}\end{beamercolorbox}
+		}
+		\vspace{1.5ex}
+		\hspace{\sepwidth}
+		\usebeamerfont{footline}
+		\centering
+		\insertfootercontent
+		\hspace{\sepwidth}
+		\vspace{1.5ex}
+	\end{beamercolorbox}
 	\else\fi
 }
